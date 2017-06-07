@@ -1,6 +1,6 @@
 {
   "name": "amazon-associate-ts",
-  "version": "0.0.1",
+  "version": "0.3.0",
   "description": "Amazon associate rebuilt with Typescript",
   "main": "./lib/src/index.js",
   "scripts": {
