@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "sourceMap": true,
+        "outDir": "./lib",
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    },
+    "filesGlob": [
+        "./src/**/*.ts",
+        "./test/**/*.ts"
+    ]
+}

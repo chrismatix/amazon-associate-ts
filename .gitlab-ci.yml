@@ -1,0 +1,47 @@
+before_script:
+  - whoami
+  - docker info
+
+stages:
+  - build
+  - test
+  - release
+
+cache:
+    paths:
+    - node_modules/
+
+build:
+  stage: build
+  script:
+    - docker stop elastic-test || echo "No container named elastic-test"
+    - docker rm elastic-test || echo "No container named elastic-test"
+    - docker run -d --name elastic-test elastic
+    - docker build -t model/test .
+
+test:
+  stage: test
+  script:
+    - docker restart test-mongo
+    - docker restart elastic-test
+    - sleep 20
+    - docker exec elastic-test ./reset_es.sh
+    - docker rm model-test || echo "No container named model-test"
+    - docker run --name model-test -e NODE_ENV=testing --link test-mongo:mongohost --link elastic-test:eshost -i model/test grunt test
+    - docker stop elastic-test
+
+patch:
+  stage: release
+  script:
+    - echo "hey staging"
+  only:
+    - staging
+  environment: staging
+
+release:
+  stage: release
+  script:
+    - echo "hey production"
+  only:
+    - master
+  environment: production

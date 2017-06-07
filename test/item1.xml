@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Data>
+    <Items></Items>
+    <AMZNShipmentTotals>
+        <Earnings>0,00</Earnings>
+        <Revenue>0,00</Revenue>
+        <Units>0</Units>
+    </AMZNShipmentTotals>
+    <NonAMZNShipmentTotals>
+        <Earnings>0,00</Earnings>
+        <Revenue>0,00</Revenue>
+        <Units>0</Units>
+    </NonAMZNShipmentTotals>
+    <ShipmentTotals>
+        <Earnings>0,00</Earnings>
+        <Revenue>0,00</Revenue>
+        <Units>0</Units>
+    </ShipmentTotals>
+    <ReturnedTotals>
+        <Earnings>0,00</Earnings>
+        <Revenue>0,00</Revenue>
+        <Units>0</Units>
+    </ReturnedTotals>
+    <RefundedTotals>
+        <Earnings>0,00</Earnings>
+        <Revenue>0,00</Revenue>
+        <Units>0</Units>
+    </RefundedTotals>
+    <ReferralFeeTotals>
+        <Earnings>0,00</Earnings>
+        <Revenue>0,00</Revenue>
+        <Units>0</Units>
+    </ReferralFeeTotals>
+    <EventTotals></EventTotals>
+    <FinalEarnings>0,00</FinalEarnings>
+    <ProductLine_array>
+        <ProductLine>
+            <GLProductGroupID>86</GLProductGroupID>
+            <ProductGroupName>Garten &amp; Freizeit</ProductGroupName>
+        </ProductLine>
+    </ProductLine_array>
+</Data>

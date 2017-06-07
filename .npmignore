@@ -1,0 +1,6 @@
+src/*
+test/*
+Gruntfile.js
+coverage
+tsconfig.json
+typings.json
